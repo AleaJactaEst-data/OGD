@@ -30,6 +30,8 @@ d = [-Re;1;-1];
 [kkt] = test_KKT(u1, mu1, Q,b,C,d,1e-2) % kkt est verifie
 
 
+% initialisation de u0 et p0
+u_0=repmat(1/N,N,1);
 p_0=zeros(m,1);
 
 % Probleme auxiliaire par le prix :
