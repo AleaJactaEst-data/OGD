@@ -15,7 +15,7 @@ itmax=200000;
 e=rand(N,1)*5; 
 Q=3*eye(N)+1*diag(ones(N-1,1),1)+1*diag(ones(N-1,1),-1); %Q symetrique definie positive
 
-%% Première résolution
+%% Première resolution
 
 C_=[ones(1,N);-ones(1,N)];
 d=[De;1;-1];
