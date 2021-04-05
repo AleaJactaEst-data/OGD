@@ -2,6 +2,7 @@
 % Le code est a executer dans le sens des sections
 
 %% Initialisation
+clear all
 N = 10;
 e = 5*rand(N,1);
 b = zeros(N,1);
