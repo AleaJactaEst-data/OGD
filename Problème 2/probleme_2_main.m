@@ -1,6 +1,7 @@
 %%%%%%%%%% Projet Exercice 3 Probleme 2 %%%%%%%
 
 %% Initialisation
+clear all
 
 De=10; %quand De petit, le probleme nest pas faisable
 N=5;
