@@ -25,7 +25,7 @@ C = [-e';ones(1,N);-ones(1,N)];
 m = size(C,1);
 d = [-Re;1;-1];
 
-% Resolution du probleme pour Q diagonale donc pas de covariance / donc indépendance : 
+% Resolution du probleme pour Q diagonale donc pas de covariance / donc independance : 
 [ u1,J1 ,mu1,it1] = Uzawa_quad( Q,b,C,d,0.001,rand(size(C,1),1), 1e-12,10000);
 [kkt] = test_KKT(u1, mu1, Q,b,C,d,1e-2) % kkt est verifie
 
@@ -89,9 +89,9 @@ end
 % affichage
 figure;
 plot(listeN,it)
-title('Nombre moyen d''itérations en fonction de N')
+title('Nombre moyen d''iterations en fonction de N')
 xlabel('N')
-ylabel('Nombre itérations')
+ylabel('Nombre iterations')
 %% Test du nombre d'iteration en fonction de Re
 clear it
 
@@ -129,6 +129,6 @@ end
 % affichage
 figure;
 plot(listeRe,it)
-title('Nombre moyen d''itérations en fonction de Re')
+title('Nombre moyen d''iterations en fonction de Re')
 xlabel('Re')
-ylabel('Nombre itérations')
+ylabel('Nombre iterations')
