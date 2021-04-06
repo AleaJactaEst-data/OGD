@@ -59,6 +59,8 @@ p_0=zeros(m,1);
 
 %% Test du nombre moyen d'iteration en fonction de N   : 
 
+clear it
+
 % parametre pour la convergence
 Re=2;
 listeN=2:20;
