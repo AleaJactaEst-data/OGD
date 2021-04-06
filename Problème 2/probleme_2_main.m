@@ -35,6 +35,8 @@ abs(sum(u)-1)<1e-2
 %% Evolution du nombre d'iteration en fonction de N et affichage d'un plot
 itmax=5000;
 
+clear it
+
 % liste des N a tester
 listeN=2:10;
  
@@ -69,6 +71,8 @@ title('Nombre moyen d iterations en fonction de N')
 %% Evolution du nombre d'iteration en fonction de De et affichage d'un plot
 % on change le nombre d'actions à 5
 N=5;
+
+clear it
 
 % on change Q en consequence
 Q=3*eye(N)+diag(ones(N-1,1),1)+diag(ones(N-1,1),-1); %Q symetrique definie positive
